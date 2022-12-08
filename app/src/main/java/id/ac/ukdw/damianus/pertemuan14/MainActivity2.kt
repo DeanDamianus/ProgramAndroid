@@ -20,10 +20,10 @@ class MainActivity2 : AppCompatActivity() {
             val kotaTujuan = kelas.toString()
 
 
-            val intent = Intent(this, hasil::class.java)
+            val intent = Intent(this, MainActivity3::class.java)
 
-            intent.putExtra("Ini Waktu keberangkatan Anda : ", kotaAsal)
-            intent.putExtra("Ini Kelas Tiket Anda : ", kotaTujuan)
+            intent.putExtra("Waktu keberangkatan Anda : ", kotaAsal)
+            intent.putExtra("Kelas Tiket Anda : ", kotaTujuan)
 
             startActivity(intent)
         }
