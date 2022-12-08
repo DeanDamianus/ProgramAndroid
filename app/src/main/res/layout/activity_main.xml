@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:background="#dbeceb"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +74,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
+        android:background="#dbeceb"
         android:orientation="horizontal"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,6 +119,7 @@
 
     <EditText
         android:id="@+id/tanggal"
+        android:background="#dbeceb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
