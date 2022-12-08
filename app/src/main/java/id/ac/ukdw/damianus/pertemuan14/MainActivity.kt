@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val berangkat = findViewById<RadioGroup>(R.id.tempatasal)
         val tujuan = findViewById<RadioGroup>(R.id.tempattujuan)
-        val tanggalkeberangkatan = findViewById<EditText>(R.id.tanggal)
+        val tanggalkeberangkatan = findViewById<EditText>(R.id.tanggalberangkat)
 
         val submit1 = findViewById<Button>(R.id.button1)
         submit1.setOnClickListener {
