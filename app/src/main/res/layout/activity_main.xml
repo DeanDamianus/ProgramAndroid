@@ -119,9 +119,9 @@
 
     <EditText
         android:id="@+id/tanggalberangkat"
-        android:background="#dbeceb"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:background="#dbeceb"
         android:text=""
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
