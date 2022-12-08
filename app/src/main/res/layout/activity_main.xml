@@ -7,95 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/tempatasal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#dbeceb"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307">
-
-        <RadioButton
-            android:id="@+id/yogyaasal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Yogyakarta" />
-
-        <RadioButton
-            android:id="@+id/jakartasal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Jakarta" />
-
-        <RadioButton
-            android:id="@+id/baliasal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Bali" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/tempattujuan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#dbeceb"
-        android:orientation="horizontal"
-        android:padding="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085">
-
-        <RadioButton
-            android:id="@+id/yogyatujuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Yogyakarta" />
-
-        <RadioButton
-            android:id="@+id/jakartatujuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Jakarta" />
-
-        <RadioButton
-            android:id="@+id/balitujuan"
-            android:layout_width="144dp"
-            android:layout_height="wrap_content"
-            android:onClick="radio_button_click"
-            android:text="Bali" />
-    </RadioGroup>
-
     <TextView
-        android:id="@+id/tanggal"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Silahkan Memasukkan Tanggal Keberangkatan!"
+        android:gravity="center"
+        android:text="Silahkan Memasukkan Tempat Tujuan!"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.054" />
+
+    <RadioGroup
+        android:id="@+id/tempatasal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364">
+
+        <RadioButton
+            android:id="@+id/yogyaasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta" />
+
+        <RadioButton
+            android:id="@+id/jakartasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta" />
+
+        <RadioButton
+            android:id="@+id/baliasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bali" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/tanggal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Silahkan Memasukkan Tempat Asal!"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,7 +66,54 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.278" />
+
+    <RadioGroup
+        android:id="@+id/tempattujuan"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tanggal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.068">
+
+        <RadioButton
+            android:id="@+id/yogyatujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta" />
+
+        <RadioButton
+            android:id="@+id/jakartatujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta" />
+
+        <RadioButton
+            android:id="@+id/balitujuan"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="Bali" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Silahkan Memasukkan Tanggal Keberangkatan!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
 
     <EditText
         android:id="@+id/tanggal"
@@ -116,20 +126,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Silahkan Memasukkan Tempat Tujuan!"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.603" />
 
     <Button
         android:id="@+id/button1"
